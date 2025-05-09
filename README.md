@@ -1,70 +1,42 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) as the as asked
 
-## Available Scripts
+# Let's start debugging
 
-In the project directory, you can run:
+Once th app Lauched we can see that the name is not set and when the incremnt button click it dosnt increment its adds ones :'(
 
-### `npm start`
+![image](https://github.com/user-attachments/assets/9fb1f8aa-1375-46ab-9142-c1b808fa7b63)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Let's take a look on our react dev tools 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![{16F67380-5857-4E5D-92E4-696763B8076A}](https://github.com/user-attachments/assets/6a2ba826-7be8-490f-af8f-a757bc8b0400)
 
-### `npm test`
+We can see abouve that at the pros level the name is set to undefined, lets try to passe a string 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![{ACD681E7-FBF7-413D-94C8-89E78BF90994}](https://github.com/user-attachments/assets/186ed1e0-860c-4c80-8cb3-35b4218d80dc)
 
-### `npm run build`
+Well it seems to be working
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![{EB4830BE-6298-40F2-8B06-4F458117F803}](https://github.com/user-attachments/assets/2cf947de-a8e2-42ba-b976-8c32fa00b9a6)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+So here we can conclud that the value passed isnt right we should fix that, now what about our counter ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![{1A0B4E03-506F-4A63-8A61-EEB614DC4E4C}](https://github.com/user-attachments/assets/a2f1382e-d355-454a-978c-39811f06ed44)
 
-### `npm run eject`
+We can can clearly see that the value passed is a string, which is not what we want if we need it to increment on each click, let change the State to test our theory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![{9ED02C71-6F38-4E31-ACBC-B7CF1B8E27AD}](https://github.com/user-attachments/assets/b9762288-ca97-4f15-be94-ab670eb5f406)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![{53D82CE4-E92F-4EFA-A5CD-268F46E41E70}](https://github.com/user-attachments/assets/8c77b7d9-bf28-4c72-bcfa-1d4562e2a89a)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Well it seems to be just that, now we need to fix that on our code :)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
