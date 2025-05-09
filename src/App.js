@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Greeting from "./components/Greeting";
+import Counter from "./components/Counter";
 
 function App() {
+  const userName = undefined; // 🔴 Bug 1 {We should pass a correct string here like "Ryad"}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Buggy React App</h1>
+      <Greeting name={userName} />
+      <Counter initialCount="5" /> {/* 🔴 Bug 2 */}
+      {/* We have to change the string "5" ==> number {5}*/}
     </div>
   );
 }
