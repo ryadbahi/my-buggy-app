@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) as the as requested
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) as requested
 
 # Let's start debugging
 
@@ -8,11 +8,11 @@ Once the app launched we can see that the name is not set and when the increment
 
 ![image](https://github.com/user-attachments/assets/9fb1f8aa-1375-46ab-9142-c1b808fa7b63)
 
-Let's take a look on our react dev tools 
+Let's take a look on our react dev tools
 
 ![{16F67380-5857-4E5D-92E4-696763B8076A}](https://github.com/user-attachments/assets/6a2ba826-7be8-490f-af8f-a757bc8b0400)
 
-We can see above that at the props level the name is set to undefined, lets try to pass a string 
+We can see above that at the props level the name is set to undefined, lets try to pass a string
 
 ![{ACD681E7-FBF7-413D-94C8-89E78BF90994}](https://github.com/user-attachments/assets/186ed1e0-860c-4c80-8cb3-35b4218d80dc)
 
@@ -31,12 +31,3 @@ We can clearly see that the value passed is a string, which is not what we want 
 ![{53D82CE4-E92F-4EFA-A5CD-268F46E41E70}](https://github.com/user-attachments/assets/8c77b7d9-bf28-4c72-bcfa-1d4562e2a89a)
 
 Well it seems to be just that, now we need to fix that on our code :)
-
-
-
-
-
-
-
-
-
